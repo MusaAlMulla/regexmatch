@@ -1,9 +1,13 @@
 package regexmatch;
 
 public class RegexMatch {
-
+    
+    public static boolean isTrue(String str){
+        return str.matches("[tT]true");
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(isTrue("false"));
     }
     
 }
